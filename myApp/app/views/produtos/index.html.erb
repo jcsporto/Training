@@ -1,0 +1,5 @@
+<% @produtos.each do |produto| %>
+  <h2><%= produto.nome %></h2>
+  <p><%= produto.descricao %></p>
+  <p><%= number_to_currency(produto.preco) %></p>
+<% end %>
